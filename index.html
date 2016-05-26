@@ -277,9 +277,18 @@
       
         
           
-            <ul>
-<li>第一次提交测试!</li>
-</ul>
+            <p>查看网卡信息：</p>
+<pre><code>ifconfig
+</code></pre><p>设定一个网卡IP：</p>
+<pre><code>ifconfig eth1 192.168.1.10 netmask 255.255.255.0
+</code></pre><p>重启网卡使设定生效：</p>
+<pre><code>sudo /etc/init.d/networking restart
+</code></pre><p>用ubuntu的系统——&gt;系统管理——&gt;网络的网络设置</p>
+<p>关闭网卡</p>
+<pre><code>ifdown eth0
+</code></pre><p>开启网卡 </p>
+<pre><code>ifup eth0
+</code></pre><p>重启网卡，优点是可以指定网卡，不影响其他网络接口</p>
 
           
         
